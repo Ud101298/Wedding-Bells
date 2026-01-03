@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Left decorative image -->
+  <img src="https://i.ibb.co/6bQj1sP/indian-bride.png" alt="Indian Bride" class="side-decor left-decor" onerror="this.style.display='none'" />
+  <!-- Right decorative image -->
+  <img src="https://i.ibb.co/Yf8YJQZ/indian-groom.png" alt="Indian Groom" class="side-decor right-decor" onerror="this.style.display='none'" />
+  <div class="container">
+    <div id="landing" class="card landing-card">
+      <div class="ornament top-ornament">ॐ</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/1721/1721988.png" alt="Ganesh" class="ganesh-icon" onerror="this.style.display='none'" />
+      <div class="diya-row">
+        <img src="https://cdn-icons-png.flaticon.com/512/5765/5765978.png" alt="Diya" class="diya-icon" />
+        <span class="mandala">✦</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/5765/5765978.png" alt="Diya" class="diya-icon" />
+      </div>
+      <div class="shubh-vivah">|| शुभ विवाह ||</div>
+      <div class="couple-names">Pranjul <span class="amp">&amp;</span> Uddeshya</div>
+      <div class="wedding-date-banner">
+        <span class="date-label">Save the Date</span>
+        <span class="date-main">15th April 2026</span>
+      </div>
+      <h1>You're Invited!</h1>
+      <p class="subtitle">To celebrate our wedding</p>
+      <p class="tagline">Together with our families, we invite you to share in our joy</p>
+      <div class="divider">─────── ✦ ───────</div>
+      <input type="text" id="guestName" placeholder="Enter your name" />
+      <button id="takeMeIn">Take Me In</button>
+      <div class="diya-row">
+        <img src="https://cdn-icons-png.flaticon.com/512/5765/5765978.png" alt="Diya" class="diya-icon" />
+        <span class="mandala">✦</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/5765/5765978.png" alt="Diya" class="diya-icon" />
+      </div>
+      <div class="ornament bottom-ornament">ॐ</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/6416/6416879.png" alt="Flowers" class="bottom-decor-img" onerror="this.style.display='none'" />
+    </div>
+    <div id="invitation" class="card hidden">
+      <button id="homeBtn" class="home-btn" title="Go to Home">🏠</button>
+      <img src="https://cdn-icons-png.flaticon.com/512/1721/1721988.png" alt="Ganesh" class="ganesh-icon small-ganesh" onerror="this.style.display='none'" />
+      <div class="diya-row">
+        <img src="https://cdn-icons-png.flaticon.com/512/5765/5765978.png" alt="Diya" class="diya-icon" />
+        <img src="https://cdn-icons-png.flaticon.com/512/5765/5765978.png" alt="Diya" class="diya-icon" />
+      </div>
+      <div class="couple-names small">Pranjul <span class="amp">&amp;</span> Uddeshya</div>
+      <img id="eventImg" src="https://cdn-icons-png.flaticon.com/512/3656/3656855.png" alt="Event Icon" class="event-icon" onerror="this.style.display='none'" />
+      <div class="event-nav">
+        <button id="leftArrow" class="arrow">&#8592;</button>
+        <span id="eventTitle">Sangeet</span>
+        <button id="rightArrow" class="arrow">&#8594;</button>
+      </div>
+      <div class="invited">Dear <span id="displayName"></span>,</div>
+      <div id="eventDetails"></div>
+      <div class="family-names">
+        <span>Mr. &amp; Mrs. Gupta</span> | <span>Mr. &amp; Mrs. Gupta</span>
+      </div>
+      <div class="footer">We can't wait to celebrate with you!</div>
+      <div class="rsvp-note">RSVP: +91 ***********</div>
+      <img src="https://cdn-icons-png.flaticon.com/512/6416/6416879.png" alt="Flowers" class="bottom-decor-img" onerror="this.style.display='none'" />
+      <div class="diya-row">
+        <img src="https://cdn-icons-png.flaticon.com/512/5765/5765978.png" alt="Diya" class="diya-icon" />
+        <img src="https://cdn-icons-png.flaticon.com/512/5765/5765978.png" alt="Diya" class="diya-icon" />
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

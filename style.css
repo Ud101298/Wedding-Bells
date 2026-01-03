@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Great+Vibes&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2d0a0a 0%, #6b1d1d 50%, #1a0a00 100%);
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url('https://www.transparenttextures.com/patterns/batthern.png');
+  opacity: 0.18;
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.card {
+  background: linear-gradient(160deg, #fffbe5 60%, #f7e6b0 100%);
+  border-radius: 32px;
+  box-shadow: 0 8px 48px 0 rgba(120, 60, 10, 0.35), 0 2px 12px #b8860b55;
+  padding: 2.5rem 2.2rem 2.2rem 2.2rem;
+  min-width: 360px;
+  max-width: 95vw;
+  text-align: center;
+  border: 6px solid #d4a017;
+  position: relative;
+  overflow: visible;
+}
+
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  left: 12px; right: 12px;
+  height: 6px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #b8860b 0%, #d4a017 50%, #b8860b 100%);
+}
+.card::before { top: 10px; }
+.card::after { bottom: 10px; }
+
+.card h1 {
+  color: #7c2d12;
+  font-family: 'Great Vibes', cursive, serif;
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 12px #f7c87377;
+}
+
+.couple-names {
+  font-family: 'Great Vibes', cursive, serif;
+  font-size: 2.5rem;
+  color: #7c2d12;
+  margin-bottom: 0.3rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 10px #f7c87366;
+}
+.couple-names.small {
+  font-size: 1.7rem;
+  margin-bottom: 0.2rem;
+}
+.couple-names .amp {
+  color: #d4a017;
+  font-size: 2.2rem;
+  margin: 0 0.3em;
+}
+
+/* Premium landing card styles */
+.landing-card {
+  padding: 2.8rem 2.5rem 2.5rem 2.5rem;
+}
+
+.shubh-vivah {
+  font-family: 'Noto Sans Devanagari', 'Great Vibes', serif;
+  font-size: 1.25rem;
+  color: #b8860b;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 1px 6px #f7c87355;
+}
+
+.ornament {
+  font-size: 2rem;
+  color: #d4a017;
+  letter-spacing: 0;
+  margin: 0.2rem 0;
+  opacity: 0.85;
+}
+.top-ornament {
+  margin-bottom: 0.1rem;
+}
+.bottom-ornament {
+  margin-top: 0.1rem;
+}
+
+.mandala {
+  color: #d4a017;
+  font-size: 1.3rem;
+  margin: 0 0.7rem;
+  vertical-align: middle;
+  text-shadow: 0 1px 8px #f7c87355;
+}
+
+.wedding-date-banner {
+  background: linear-gradient(90deg, #7c2d12 0%, #b8860b 50%, #7c2d12 100%);
+  color: #fffbe5;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin: 0.7rem auto 0.7rem auto;
+  display: inline-block;
+  box-shadow: 0 2px 12px #b8860b55;
+}
+.wedding-date-banner .date-label {
+  display: block;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+.wedding-date-banner .date-main {
+  display: block;
+  font-size: 1.25rem;
+  font-family: 'Great Vibes', cursive, serif;
+  letter-spacing: 1px;
+  margin-top: 0.1rem;
+}
+
+.divider {
+  color: #d4a017;
+  font-size: 1.1rem;
+  margin: 0.7rem 0 1rem 0;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+/* Ganesh icon at top */
+.ganesh-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0.2rem auto 0.3rem auto;
+  display: block;
+  filter: drop-shadow(0 2px 8px #d4a01777);
+}
+.ganesh-icon.small-ganesh {
+  width: 50px;
+  height: 50px;
+  margin: 0.1rem auto 0.2rem auto;
+}
+
+/* Event icon for each event */
+.event-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0.5rem auto 0.3rem auto;
+  display: block;
+  filter: drop-shadow(0 2px 8px #d4a01777);
+  border-radius: 12px;
+  background: #fffbe6;
+  border: 2px solid #d4a017;
+  padding: 6px;
+}
+
+/* Bottom decorative image (flowers) */
+.bottom-decor-img {
+  width: 90px;
+  height: auto;
+  margin: 0.7rem auto 0 auto;
+  display: block;
+  opacity: 0.85;
+  filter: drop-shadow(0 2px 8px #d4a01744);
+}
+
+/* Home button */
+.home-btn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: linear-gradient(135deg, #fffbe5 60%, #f7e6b0 100%);
+  color: #7c2d12;
+  border: 2px solid #d4a017;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px #b8860b44;
+  transition: background 0.2s, box-shadow 0.2s;
+  z-index: 10;
+}
+.home-btn:hover {
+  background: linear-gradient(135deg, #f7e6b0 60%, #fffbe5 100%);
+  box-shadow: 0 4px 16px #b8860b77;
+}
+
+.tagline {
+  color: #8b4513;
+  font-size: 1rem;
+  margin-bottom: 1.1rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-style: italic;
+}
+
+.family-names {
+  color: #8b4513;
+  font-size: 0.98rem;
+  margin-top: 0.7rem;
+  margin-bottom: 0.2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.rsvp-note {
+  color: #7c2d12;
+  font-size: 1rem;
+  margin-top: 0.7rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: #8b4513;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.wedding-img {
+  width: 130px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 18px;
+  box-shadow: 0 2px 18px rgba(180, 100, 30, 0.22);
+  background: #fffbe6;
+  border: 4px solid #d4a017;
+  object-fit: contain;
+}
+
+.landing-img {
+  margin-top: -1.2rem;
+}
+
+.event-img {
+  margin-bottom: 0.5rem;
+  margin-top: -1.2rem;
+}
+
+input[type="text"] {
+  padding: 0.75rem 1.1rem;
+  border-radius: 10px;
+  border: 2px solid #d4a017;
+  font-size: 1.08rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  max-width: 260px;
+  background: #fffdf7;
+  box-shadow: 0 1px 6px rgba(180, 100, 30, 0.10);
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+button {
+  background: linear-gradient(90deg, #b8860b 0%, #d4a017 60%, #7c2d12 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 2rem;
+  font-size: 1.13rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 12px #b8860b55;
+  transition: background 0.2s, box-shadow 0.2s;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #7c2d12 0%, #d4a017 60%, #b8860b 100%);
+  box-shadow: 0 4px 18px #b8860b88;
+}
+
+.hidden {
+  display: none;
+}
+
+.event-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  gap: 1.2rem;
+}
+
+.arrow {
+  background: linear-gradient(135deg, #fffbe5 60%, #f7e6b0 100%);
+  color: #7c2d12;
+  border: 2px solid #d4a017;
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 6px #b8860b33;
+}
+
+.arrow:hover {
+  background: linear-gradient(135deg, #f7e6b0 60%, #fffbe5 100%);
+  box-shadow: 0 2px 12px #b8860b55;
+}
+
+#eventTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #7c2d12;
+  letter-spacing: 2px;
+  font-family: 'Great Vibes', cursive, serif;
+  text-shadow: 0 1px 8px #f7c87355;
+  padding: 0.5rem 2.2rem;
+  background: linear-gradient(90deg, #fffbe5 60%, #f7e6b0 100%);
+  border-radius: 12px;
+  border: 2.5px solid #d4a017;
+  box-shadow: 0 2px 8px #b8860b22;
+}
+
+.invited {
+  font-size: 1.28rem;
+  color: #8b4513;
+  margin-bottom: 1.2rem;
+  font-family: 'Great Vibes', cursive, serif;
+  letter-spacing: 1px;
+}
+
+#eventDetails {
+  background: linear-gradient(160deg, #fffdf7 60%, #f7e6b0 100%);
+  border-radius: 16px;
+  padding: 1.2rem 1.1rem;
+  margin-bottom: 1.2rem;
+  color: #6b3a00;
+  font-size: 1.13rem;
+  border: 2.5px dashed #d4a017;
+  box-shadow: 0 1px 10px #b8860b22;
+}
+
+.footer {
+  color: #7c2d12;
+  font-size: 1.13rem;
+  margin-top: 1.5rem;
+  font-family: 'Great Vibes', cursive, serif;
+  letter-spacing: 1px;
+}
+
+/* Side decorative images (bride/groom or wedding-related) */
+.side-decor {
+  position: fixed;
+  bottom: 0;
+  width: 220px;
+  max-width: 18vw;
+  height: auto;
+  z-index: 2;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 24px #00000055);
+  opacity: 0.92;
+}
+.left-decor {
+  left: 2vw;
+}
+.right-decor {
+  right: 2vw;
+}
+
+/* Diya icons for festive touch */
+.diya-row {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 0.7rem 0 0.2rem 0;
+}
+.diya-icon {
+  width: 38px;
+  height: 38px;
+  filter: drop-shadow(0 2px 8px #d4a01777);
+  animation: flicker 1.2s infinite alternate;
+}
+@keyframes flicker {
+  0% { opacity: 1; filter: drop-shadow(0 2px 8px #d4a01777); }
+  100% { opacity: 0.7; filter: drop-shadow(0 2px 16px #f7c87399); }
+}
+
+@media (max-width: 900px) {
+  .side-decor { display: none; }
+}
